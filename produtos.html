@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos - NVBT</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h1><a href="index.html">NVBT</a></h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="produtos.html" class="nav-link active">Produtos</a></li>
+                    <li><a href="catalogos.html" class="nav-link">Catálogos</a></li>
+                    <li><a href="institucional.html" class="nav-link">Institucional</a></li>
+                    <li><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="galeria.html" class="nav-link">Galeria</a></li>
+                    <li><a href="contato.html" class="nav-link">Contato</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="page-header">
+                <h1>Nossos Produtos</h1>
+                <p>Explore nossa linha completa de produtos inovadores</p>
+            </div>
+
+            <div class="products-container">
+                <!-- Search Bar -->
+                <div class="search-section">
+                    <div class="search-bar">
+                        <input type="text" id="search-input" placeholder="Pesquisar por nome, código ou SKU...">
+                        <button type="button" id="search-btn">🔍</button>
+                    </div>
+                    <div class="search-results" id="search-results"></div>
+                </div>
+
+                <div class="products-layout">
+                    <!-- Filters Sidebar -->
+                    <aside class="filters-sidebar">
+                        <h3>Filtros</h3>
+                        
+                        <div class="filter-group">
+                            <h4>Características</h4>
+                            <div class="filter-options">
+                                <label><input type="checkbox" value="premium"> Premium</label>
+                                <label><input type="checkbox" value="basico"> Básico</label>
+                                <label><input type="checkbox" value="avancado"> Avançado</label>
+                                <label><input type="checkbox" value="profissional"> Profissional</label>
+                            </div>
+                        </div>
+
+                        <div class="filter-group">
+                            <h4>Tipo de Produto</h4>
+                            <div class="filter-options">
+                                <label><input type="checkbox" value="eletronico"> ABS</label>
+                                <label><input type="checkbox" value="mecanico"> Mecânico</label>
+                                <label><input type="checkbox" value="software"> Software</label>
+                                <label><input type="checkbox" value="acessorio"> Acessório</label>
+                            </div>
+                        </div>
+
+                        <div class="filter-group">
+                            <h4>Linha do Produto</h4>
+                            <div class="filter-options">
+                                <label><input type="checkbox" value="linha-a"> Linha Mouder</label>
+                                <label><input type="checkbox" value="linha-b"> Linha Charm</label>
+                                <label><input type="checkbox" value="linha-c"> Linha Soft</label>
+                                <label><input type="checkbox" value="linha-d"> Linha Premium</label>
+                            </div>
+                        </div>
+
+                        <div class="filter-group">
+                            <h4>Coleção</h4>
+                            <div class="filter-options">
+                                <label><input type="checkbox" value="2025"> 2025</label>
+                                <label><input type="checkbox" value="2024"> 2024</label>
+                                <label><input type="checkbox" value="especial"> Especial</label>
+                                <label><input type="checkbox" value="limitada"> Limitada</label>
+                            </div>
+                        </div>
+
+                        <div class="filter-group">
+                            <h4>Altura</h4>
+                            <div class="filter-options">
+                                <label><input type="checkbox" value="pequeno"> Pequeno (até 07cm)</label>
+                                <label><input type="checkbox" value="medio"> Médio (10cm)</label>
+                                <label><input type="checkbox" value="grande"> Grande (15cm+)</label>
+                            </div>
+                        </div>
+
+                        <div class="filter-group">
+                            <h4>Largura</h4>
+                            <div class="filter-options">
+                                <label><input type="checkbox" value="estreito"> Estreito (até 1Mt)</label>
+                                <label><input type="checkbox" value="padrao"> Padrão (1.1Mt-2.0Mt)</label>
+                                <label><input type="checkbox" value="largo"> Largo (2.1Mt+)</label>
+                            </div>
+                        </div>
+
+                        <div class="filter-group">
+                            <h4>Cor</h4>
+                            <div class="filter-options">
+                                <label><input type="checkbox" value="azul"> Azul</label>
+                                <label><input type="checkbox" value="branco"> Branco</label>
+                                <label><input type="checkbox" value="cinza"> Cinza</label>
+                                <label><input type="checkbox" value="preto"> Preto</label>
+                                <label><input type="checkbox" value="vermelho"> Vermelho</label>
+                            </div>
+                        </div>
+
+                        <div class="filter-actions">
+                            <button type="button" id="apply-filters" class="btn-primary">Aplicar Filtros</button>
+                            <button type="button" id="clear-filters" class="btn-secondary">Limpar Filtros</button>
+                        </div>
+                    </aside>
+
+                    <!-- Products Grid -->
+                    <div class="products-main">
+                        <div class="products-header">
+                            <div class="products-count">
+                                <span id="products-count">Mostrando 15 de 45 produtos</span>
+                            </div>
+                            <div class="products-sort">
+                                <select id="sort-select">
+                                    <option value="nome">Ordenar por Nome</option>
+                                    <option value="preco">Ordenar por Preço</option>
+                                    <option value="data">Ordenar por Data</option>
+                                    <option value="popularidade">Ordenar por Popularidade</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="products-grid" id="products-grid">
+                            <!-- Products will be loaded here by JavaScript -->
+                        </div>
+
+                        <div class="pagination">
+                            <button class="page-btn" id="prev-page">← Anterior</button>
+                            <div class="page-numbers" id="page-numbers"></div>
+                            <button class="page-btn" id="next-page">Próximo →</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>NVBT</h3>
+                    <p>Soluções inovadoras para um futuro melhor.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="catalogos.html">Catálogos</a></li>
+                        <li><a href="institucional.html">Institucional</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Mais Informações</h4>
+                    <ul>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="sac.html">SAC</a></li>
+                        <li><a href="reclamacoes.html">Reclamações</a></li>
+                        <li><a href="politica-privacidade.html">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Redes Sociais</h4>
+                    <div class="footer-social">
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">LinkedIn</a>
+                        <a href="#">YouTube</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 NVBT. Todos os direitos reservados.</p>
+                <p>Desenvolvido por <a href="https://wa.me/5543996349824">Felipe Indejejczak</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/produtos.js"></script>
+</body>
+</html>

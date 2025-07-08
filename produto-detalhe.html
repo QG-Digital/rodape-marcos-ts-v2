@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produto - NVBT</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h1><a href="index.html">NVBT</a></h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="produtos.html" class="nav-link">Produtos</a></li>
+                    <li><a href="catalogos.html" class="nav-link">Catálogos</a></li>
+                    <li><a href="institucional.html" class="nav-link">Institucional</a></li>
+                    <li><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="galeria.html" class="nav-link">Galeria</a></li>
+                    <li><a href="contato.html" class="nav-link">Contato</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span>></span>
+                <a href="produtos.html">Produtos</a>
+                <span>></span>
+                <span id="product-breadcrumb">Produto</span>
+            </div>
+
+            <div class="product-detail-container">
+                <div class="product-images">
+                    <div class="main-image">
+                        <img id="main-product-image" src="" alt="Produto">
+                    </div>
+                    <div class="thumbnail-images">
+                        <img class="thumbnail active" src="" alt="Produto 1">
+                        <img class="thumbnail" src="" alt="Produto 2">
+                        <img class="thumbnail" src="" alt="Produto 3">
+                    </div>
+                </div>
+
+                <div class="product-info">
+                    <h1 id="product-name" class="product-title">Carregando...</h1>
+                    <div class="product-meta">
+                        <span class="product-sku">SKU: <span id="product-sku">-</span></span>
+                        <span class="product-code">Código: <span id="product-code">-</span></span>
+                    </div>
+                    
+                    <div class="product-description">
+                        <p id="product-description">Descrição do produto será carregada aqui...</p>
+                    </div>
+
+                    <div class="product-specs">
+                        <h3>Especificações Técnicas</h3>
+                        <table class="specs-table">
+                            <tbody id="specs-table-body">
+                                <!-- Specs will be loaded here -->
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="product-actions">
+                        <button id="quote-btn" class="btn-quote">Solicitar Orçamento</button>
+                        <button id="share-btn" class="btn-share">Compartilhar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="related-products">
+                <h2>Produtos Relacionados</h2>
+                <div class="related-products-grid" id="related-products-grid">
+                    <!-- Related products will be loaded here -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Quote Modal -->
+    <div id="quote-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Solicitar Orçamento</h2>
+            <form id="quote-form">
+                <div class="form-group">
+                    <label for="quote-name">Nome Completo *</label>
+                    <input type="text" id="quote-name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="quote-contact">Número de Contato *</label>
+                    <input type="tel" id="quote-contact" name="contact" required>
+                </div>
+                <div class="form-group">
+                    <label for="quote-document">CPF/CNPJ *</label>
+                    <input type="text" id="quote-document" name="document" required>
+                </div>
+                <div class="form-group">
+                    <label for="quote-message">Como podemos lhe ajudar? *</label>
+                    <textarea id="quote-message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Enviar Solicitação</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div id="success-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="success-message">
+                <h2>✅ Obrigado!</h2>
+                <p>Um de nossos representantes logo irá entrar em contato. Todos os seus dados estão guardados em sigilo, não se preocupe.</p>
+                <button class="btn-close">Fechar</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>NVBT</h3>
+                    <p>Soluções inovadoras para um futuro melhor.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="catalogos.html">Catálogos</a></li>
+                        <li><a href="institucional.html">Institucional</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Mais Informações</h4>
+                    <ul>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="sac.html">SAC</a></li>
+                        <li><a href="reclamacoes.html">Reclamações</a></li>
+                        <li><a href="politica-privacidade.html">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Redes Sociais</h4>
+                    <div class="footer-social">
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">LinkedIn</a>
+                        <a href="#">YouTube</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 NVBT. Todos os direitos reservados.</p>
+                <p>Desenvolvido por <a href="https://wa.me/5543996349824">Felipe Indejejczak</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/produto-detalhe.js"></script>
+</body>
+</html>

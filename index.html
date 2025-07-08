@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NVBT - Soluções Inovadoras</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h1>NVBT</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="produtos.html" class="nav-link">Produtos</a></li>
+                    <li><a href="catalogos.html" class="nav-link">Catálogos</a></li>
+                    <li><a href="institucional.html" class="nav-link">Institucional</a></li>
+                    <li><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="galeria.html" class="nav-link">Galeria</a></li>
+                    <li><a href="contato.html" class="nav-link">Contato</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Carousel Section -->
+        <section class="hero-carousel">
+            <div class="carousel-container">
+                <div class="carousel-slide active">
+                    <div class="slide-content">
+                        <h2>Inovação em Cada Produto</h2>
+                        <p>Descubra nossa linha completa de soluções tecnológicas desenvolvidas para atender às suas necessidades.</p>
+                        <a href="produtos.html" class="cta-button">Saiba Mais</a>
+                    </div>
+                    <div class="slide-image">
+                        <img src="Images/capa2.jpg" alt="Produto 1">
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <div class="slide-content">
+                        <h2>Qualidade Garantida</h2>
+                        <p>Nossos produtos passam por rigorosos testes de qualidade para garantir a melhor experiência.</p>
+                        <a href="institucional.html" class="cta-button">Saiba Mais</a>
+                    </div>
+                    <div class="slide-image">
+                        <img src="Images/capa1.jpg" alt="Produto 2">
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <div class="slide-content">
+                        <h2>Atendimento Especializado</h2>
+                        <p>Nossa equipe está pronta para oferecer o melhor suporte técnico e comercial.</p>
+                        <a href="contato.html" class="cta-button">Saiba Mais</a>
+                    </div>
+                    <div class="slide-image">
+                        <img src="Images/capa3.jpg" alt="Produto 3">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-indicators">
+                <button class="indicator active" data-slide="0"></button>
+                <button class="indicator" data-slide="1"></button>
+                <button class="indicator" data-slide="2"></button>
+            </div>
+        </section>
+
+        <!-- Quick Access Section -->
+        <section class="quick-access">
+            <div class="container">
+                <div class="quick-access-grid">
+                    <div class="quick-card">
+                        <div class="quick-icon">🚀</div>
+                        <h3>Lançamentos</h3>
+                        <p>Confira os produtos mais recentes</p>
+                        <a href="produtos.html?filter=lancamentos" class="quick-link">Ver Lançamentos</a>
+                    </div>
+                    <div class="quick-card">
+                        <div class="quick-icon">⭐</div>
+                        <h3>Destaques</h3>
+                        <p>Os produtos mais vendidos</p>
+                        <a href="produtos.html?filter=destaques" class="quick-link">Ver Destaques</a>
+                    </div>
+                    <div class="quick-card">
+                        <div class="quick-icon">📚</div>
+                        <h3>Catálogos</h3>
+                        <p>Acesse nossos catálogos completos</p>
+                        <a href="catalogos.html" class="quick-link">Ver Catálogos</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section class="blog-section">
+            <div class="container">
+                <h2 class="section-title">Nosso Blog</h2>
+                <div class="blog-grid">
+                    <article class="blog-card">
+                        <img src="Images/inovacao.jpg" alt="Blog Post">
+                        <div class="blog-content">
+                            <h3>Inovações Tecnológicas 2025</h3>
+                            <p>Descubra as principais tendências tecnológicas que estão transformando o mercado...</p>
+                            <a href="blog-post.html?id=1" class="blog-link">Leia Mais</a>
+                        </div>
+                    </article>
+                    <article class="blog-card">
+                        <img src="Images/sustentabilidade.jpg" alt="Blog Post">
+                        <div class="blog-content">
+                            <h3>Sustentabilidade na Produção</h3>
+                            <p>Como implementamos práticas sustentáveis em nossos processos produtivos...</p>
+                            <a href="blog-post.html?id=2" class="blog-link">Leia Mais</a>
+                        </div>
+                    </article>
+                    <article class="blog-card">
+                        <img src="Images/manutencao.jpg" alt="Blog Post">
+                        <div class="blog-content">
+                            <h3>Dicas de Manutenção</h3>
+                            <p>Mantenha seus equipamentos em perfeito estado com nossas dicas especializadas...</p>
+                            <a href="blog-post.html?id=3" class="blog-link">Leia Mais</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Media Section -->
+        <section class="social-section">
+            <div class="container">
+                <h2 class="section-title">Acompanhe nas Redes Sociais</h2>
+                <div class="social-grid">
+                    <a href="#" class="social-link facebook">
+                        <span class="social-icon">📘</span>
+                        <span>Facebook</span>
+                    </a>
+                    <a href="#" class="social-link instagram">
+                        <span class="social-icon">📷</span>
+                        <span>Instagram</span>
+                    </a>
+                    <a href="#" class="social-link linkedin">
+                        <span class="social-icon">💼</span>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="#" class="social-link youtube">
+                        <span class="social-icon">🎥</span>
+                        <span>YouTube</span>
+                    </a>
+                    <a href="#" class="social-link pinterest">
+                        <span class="social-icon">📌</span>
+                        <span>Pinterest</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section
+       <section class="contact-section">
+            <div class="container">
+                <h2 class="section-title">Alguma Dúvida?</h2>
+                <div class="contact-grid">
+                    <div class="contact-item">
+                        <h3>WhatsApp</h3>
+                        <p>(43) 9 9634-9824</p>
+                        <a href="https://wa.me/5543996349824" class="contact-btn whatsapp">Falar no WhatsApp</a>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Email</h3>
+                        <p>contato@nvbt.com.br</p>
+                        <a href="mailto:contato@nvbt.com.br" class="contact-btn email">Enviar Email</a>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Fale Conosco</h3>
+                        <p>Atendimento personalizado</p>
+                        <a href="https://wa.me/5543996349824" class="contact-btn primary">Fale Conosco</a>
+                    </div>
+                </div>
+            </div>
+        </section>  -->
+
+        <!-- Featured Products Section -->
+        <section class="featured-products">
+            <div class="container">
+                <h2 class="section-title">Conheça Também</h2>
+                <div class="products-carousel">
+                    <div class="product-card">
+                        <img src="Images/Rodape1.png" alt="Produto 1">
+                        <h3>Rodapé Mouder A1</h3>
+                        <p>SKU: PRD001 | Código: NVB001</p>
+                        <a href="produto-detalhe.html?id=1" class="product-link">Ver Mais</a>
+                    </div>
+                    <div class="product-card">
+                        <img src="Images/Rodape2.png" alt="Produto 2">
+                        <h3>Rodapé Charm A1</h3>
+                        <p>SKU: PRD015 | Código: NVB015</p>
+                        <a href="produto-detalhe.html?id=2" class="product-link">Ver Mais</a>
+                    </div>
+                    <div class="product-card">
+                        <img src="Images/Rodape3.png" alt="Produto 3">
+                        <h3>Rodapé Soft A1</h3>
+                        <p>SKU: PRD033 | Código: NVB036</p>
+                        <a href="produto-detalhe.html?id=3" class="product-link">Ver Mais</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>NVBT</h3>
+                    <p>Soluções inovadoras para um futuro melhor.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="catalogos.html">Catálogos</a></li>
+                        <li><a href="institucional.html">Institucional</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Mais Informações</h4>
+                    <ul>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="sac.html">SAC</a></li>
+                        <li><a href="reclamacoes.html">Reclamações</a></li>
+                        <li><a href="politica-privacidade.html">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Redes Sociais</h4>
+                    <div class="footer-social">
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">LinkedIn</a>
+                        <a href="#">YouTube</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 NVBT. Todos os direitos reservados.</p>
+                <p>Desenvolvido por <a href="https://wa.me/5543996349824">Felipe Indejejczak</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/carousel.js"></script>
+</body>
+</html>

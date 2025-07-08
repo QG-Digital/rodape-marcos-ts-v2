@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reclamações - NVBT</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h1><a href="index.html">NVBT</a></h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="produtos.html" class="nav-link">Produtos</a></li>
+                    <li><a href="catalogos.html" class="nav-link">Catálogos</a></li>
+                    <li><a href="institucional.html" class="nav-link">Institucional</a></li>
+                    <li><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="galeria.html" class="nav-link">Galeria</a></li>
+                    <li><a href="contato.html" class="nav-link">Contato</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="page-header">
+                <h1>Central de Reclamações</h1>
+                <p>Sua opinião é importante para nós. Registre sua reclamação e ajude-nos a melhorar.</p>
+            </div>
+
+            <div class="content-wrapper">
+                <section class="policy-section">
+                    <h2>Como Funciona</h2>
+                    <p>Nossa Central de Reclamações foi criada para garantir que todas as suas preocupações sejam ouvidas e resolvidas de forma rápida e eficiente. Seguimos rigorosamente as diretrizes do Código de Defesa do Consumidor.</p>
+                    
+                    <h3>Processo de Atendimento</h3>
+                    <ul>
+                        <li>Recebimento da reclamação em até 24 horas</li>
+                        <li>Análise detalhada do caso por nossa equipe especializada</li>
+                        <li>Contato direto com o cliente em até 48 horas</li>
+                        <li>Resolução do problema em até 7 dias úteis</li>
+                        <li>Acompanhamento pós-resolução para garantir satisfação</li>
+                    </ul>
+                </section>
+
+                <section class="form-section">
+                    <h2>Registrar Reclamação</h2>
+                    <form id="complaint-form">
+                        <div class="form-group">
+                            <label for="cnpj">CNPJ/CPF *</label>
+                            <input type="text" id="cnpj" name="cnpj" required>
+                            <small>Informe seu CNPJ ou CPF para identificação</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="complaint-name">Nome Completo *</label>
+                            <input type="text" id="complaint-name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="complaint-contact">Número de Contato *</label>
+                            <input type="tel" id="complaint-contact" name="contact" required>
+                            <small>WhatsApp, telefone fixo ou celular</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="complaint-type">Tipo de Reclamação *</label>
+                            <select id="complaint-type" name="type" required>
+                                <option value="">Selecione o tipo</option>
+                                <option value="produto">Produto</option>
+                                <option value="atendimento">Atendimento</option>
+                                <option value="experiencia">Experiência</option>
+                                <option value="demora-entrega">Demora na Entrega</option>
+                                <option value="outros">Outros</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="complaint-observation">Conte-nos o que aconteceu *</label>
+                            <textarea id="complaint-observation" name="observation" rows="6" required placeholder="Descreva detalhadamente sua reclamação. Quanto mais informações você fornecer, melhor poderemos ajudá-lo."></textarea>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary">Enviar Reclamação</button>
+                        </div>
+                    </form>
+                </section>
+
+                <section class="policy-section">
+                    <h2>Seus Direitos</h2>
+                    <p>Como consumidor, você tem direitos garantidos pelo Código de Defesa do Consumidor:</p>
+                    <ul>
+                        <li>Direito à informação clara e adequada sobre produtos e serviços</li>
+                        <li>Proteção contra publicidade enganosa ou abusiva</li>
+                        <li>Direito de arrependimento em compras online (7 dias)</li>
+                        <li>Garantia legal e contratual dos produtos</li>
+                        <li>Atendimento respeitoso e eficiente</li>
+                        <li>Reparação por danos materiais e morais</li>
+                    </ul>
+                </section>
+
+                <section class="policy-section">
+                    <h2>Canais Alternativos</h2>
+                    <p>Além desta central, você também pode registrar sua reclamação através de:</p>
+                    
+                    <div class="contact-info">
+                        <p><strong>Procon:</strong> www.procon.pr.gov.br</p>
+                        <p><strong>Consumidor.gov.br:</strong> www.consumidor.gov.br</p>
+                        <p><strong>Reclame Aqui:</strong> www.reclameaqui.com.br</p>
+                        <p><strong>WhatsApp:</strong> <a href="https://wa.me/5543996349824">(43) 9 9634-9824</a></p>
+                        <p><strong>Email:</strong> reclamacoes@nvbt.com.br</p>
+                    </div>
+                </section>
+
+                <section class="policy-section">
+                    <h2>Compromisso com a Qualidade</h2>
+                    <p>Na NVBT, acreditamos que cada reclamação é uma oportunidade de melhoria. Nossa equipe está comprometida em:</p>
+                    <ul>
+                        <li>Ouvir atentamente suas preocupações</li>
+                        <li>Investigar thoroughly cada caso</li>
+                        <li>Implementar melhorias baseadas no seu feedback</li>
+                        <li>Manter você informado durante todo o processo</li>
+                        <li>Garantir que sua experiência seja sempre positiva</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Success Modal -->
+    <div id="success-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="success-message">
+                <h2>✅ Reclamação Registrada!</h2>
+                <p>Sua reclamação foi registrada com sucesso. Nossa equipe entrará em contato em até 48 horas para resolver sua questão.</p>
+                <p><strong>Protocolo:</strong> <span id="protocol-number"></span></p>
+                <button class="btn-close">Fechar</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>NVBT</h3>
+                    <p>Soluções inovadoras para um futuro melhor.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="catalogos.html">Catálogos</a></li>
+                        <li><a href="institucional.html">Institucional</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Mais Informações</h4>
+                    <ul>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="sac.html">SAC</a></li>
+                        <li><a href="reclamacoes.html">Reclamações</a></li>
+                        <li><a href="politica-privacidade.html">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Redes Sociais</h4>
+                    <div class="footer-social">
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">LinkedIn</a>
+                        <a href="#">YouTube</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 NVBT. Todos os direitos reservados.</p>
+                <p>Desenvolvido por <a href="https://wa.me/5543996349824">Felipe Indejejczak</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/reclamacoes.js"></script>
+</body>
+</html>
